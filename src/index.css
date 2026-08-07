@@ -23,8 +23,8 @@
   border-right: 0.15em solid var(--color-purple);
   white-space: nowrap;
   /* for line text  */
-  width:22rem;
-  animation: typing 3s steps(30), blink-caret 0.9s step-end infinite;
+  width:17rem;
+  animation: typing 4s steps(30), blink-caret 0.9s step-end infinite;
 }
 
 @keyframes typing {
@@ -33,7 +33,7 @@
   }
 
   to {
-    width:70%
+    width:100%
   }
 
   /*{width:15inch} match the number of characters*/

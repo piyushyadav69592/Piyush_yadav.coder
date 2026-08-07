@@ -24,32 +24,30 @@ const Navbar = () => {
 
             <div className='hidden md:flex text-xl space-x-8'>
 
-                <a href="#home" className='relative hover:border-b-4 border-purple-500 transition-all duration-100 group'>
+                <a href="#home" className='relative hover:border-b-2 border-purple-500 transition-all duration-100 group'>
                     <span className='hover:text-purple-500'>Home</span>
                     <span className='absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full'></span>
                 </a>
 
-                <a href="#about" className='relative hover:border-b-4 border-purple-500 transition-all duration-100 group'>
+                <a href="#about" className='relative hover:border-b-2 border-purple-500 transition-all duration-100 group'>
                     <span className='hover:text-purple-500'>About</span>
                     <span className='absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full'></span>
                 </a>
 
-                <a href="#skills" className=' relative hover:border-b-4 border-purple-500 transition-all duration-300 group'>
+                <a href="#skills" className=' relative hover:border-b-2 border-purple-500 transition-all duration-300 group'>
                     <span className='hover:text-purple-500'>Skills</span>
                     <span className='absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full'></span>
                 </a>
 
-                <a href="#project" className=' relative hover:border-b-4 border-purple-500 transition-all duration-300 group'>
+                <a href="#project" className=' relative hover:border-b-2 border-purple-500 transition-all duration-300 group'>
                     <span className='hover:text-purple-500'>Project</span>
                     <span className='absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full'></span>
                 </a>
 
-                <a href="#" className=' relative hover:border-b-4 border-purple-500 transition-all duration-300 group'>
+                <a href="#" className=' relative hover:border-b-2 border-purple-500 transition-all duration-300 group'>
                     <span className='hover:text-purple-500'>Contect</span>
                     <span className='absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full'></span>
                 </a>
-
-
 
             </div>
 
