@@ -10,10 +10,21 @@ import projectImg6 from '../assets/project6.avif';
 import projectImg7 from '../assets/project7.jpg';
 import projectImg8 from '../assets/project8.webp';
 import projectImg9 from '../assets/project9.jpg';
+import projectImg10 from '../assets/project10.jpeg';
 
 
 export const assets = {
     profileImg,
+    projectImg1,
+    projectImg2,
+    projectImg3,
+    projectImg4,
+    projectImg5,
+    projectImg6,
+    projectImg7,
+    projectImg8,
+    projectImg9,
+    projectImg10
 }
 
 
