@@ -1,4 +1,5 @@
-import { FaLightbulb, FaPaintBrush, FaCode, FaReact, FaServer, FaMobileAlt, FaTools, FaNodeJs, FaStripe, FaVuejs, FaFire, FaDatabase, FaCloud, FaRobot } from 'react-icons/fa';
+import { FaLightbulb, FaPaintBrush, FaCode, FaReact, FaServer, FaMobileAlt, FaTools, FaNodeJs, FaStripe, FaVuejs, FaFire, FaDatabase, FaCloud, FaRobot, } from 'react-icons/fa';
+import { GiBookshelf } from "react-icons/gi";
 
 import profileImg from '../assets/profile.JPG';
 import projectImg1 from '../assets/project1.avif';
@@ -14,40 +15,48 @@ import projectImg10 from '../assets/project10.jpeg';
 
 
 export const assets = {
-    profileImg,
-    projectImg1,
-    projectImg2,
-    projectImg3,
-    projectImg4,
-    projectImg5,
-    projectImg6,
-    projectImg7,
-    projectImg8,
-    projectImg9,
-    projectImg10
+  profileImg,
+  projectImg1,
+  projectImg2,
+  projectImg3,
+  projectImg4,
+  projectImg5,
+  projectImg6,
+  projectImg7,
+  projectImg8,
+  projectImg9,
+  projectImg10
 }
 
 
 export const aboutInfo = [
-    {
-      icon: FaLightbulb,
-      title: 'Innovative',
-      description: 'I love creating unique solutions to complex problems with cutting-edge technologies.',
-      color: 'text-purple'
-    },
-    {
-      icon: FaPaintBrush,
-      title: 'Design Oriented',
-      description: 'Beautiful design and user experience are at the heart of everything I create.',
-      color: 'text-pink'
-    },
-    {
-      icon: FaCode,
-      title: 'Clean Code',
-      description: 'I write maintainable, efficient code following best practices and modern patterns.',
-      color: 'text-blue'
-    }
-  ];
+  {
+    icon: FaLightbulb,
+    title: 'Innovative',
+    description: 'I love creating unique solutions to complex problems with cutting-edge technologies.',
+    color: 'text-yellow'
+  },
+  {
+    icon: FaPaintBrush,
+    title: 'Design Oriented',
+    description: 'Beautiful design and user experience are at the heart of everything I create.',
+    color: 'text-pink'
+  },
+  {
+    icon: FaCode,
+    title: 'Clean Code',
+    description: 'I write maintainable, efficient code following best practices and modern patterns.',
+    color: 'text-blue'
+  },
+  {
+    icon:GiBookshelf,
+    title: 'UI/UX with Figma',
+    description: 'I design modern, user-friendly interfaces in Figma, focusing on clean layouts and smooth user experiences.',
+    // color: 'text-teal-500'
+    color: 'text-green-500'
+  }
+  ,
+];
 
 
 
@@ -98,7 +107,7 @@ export const projects = [
     description: "A full-featured online store with shopping cart, user authentication, and payment processing.",
     image: projectImg1,
     tech: ["React", "Node.js", "MongoDB", "Stripe"],
-    icons: [FaReact, FaNodeJs, FaDatabase , FaStripe],
+    icons: [FaReact, FaNodeJs, FaDatabase, FaStripe],
     demo: "#",
     code: "#",
   },
@@ -107,7 +116,7 @@ export const projects = [
     description: "A productivity application with drag-and-drop functionality and real-time updates.",
     image: projectImg2,
     tech: ["Vue.js", "Firebase", "Tailwind CSS", "WebSockets"],
-    icons: [FaVuejs, FaFire, FaCloud , FaDatabase],
+    icons: [FaVuejs, FaFire, FaCloud, FaDatabase],
     demo: "#",
     code: "#",
   },
@@ -134,7 +143,7 @@ export const projects = [
     description: "A real-time chat application with group messaging, emojis, and file sharing.",
     image: projectImg5,
     tech: ["Socket.IO", "React", "Node.js", "MongoDB"],
-    icons: [FaReact, FaNodeJs, FaDatabase ],
+    icons: [FaReact, FaNodeJs, FaDatabase],
     demo: "#",
     code: "#",
   },

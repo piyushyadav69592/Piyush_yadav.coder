@@ -62,7 +62,7 @@ const Navbar = () => {
 
             {
                 showmenu && (
-                    <div className='flex md:hidden mt-19 flex-col space-y-10 h-screen p-5 w-25 absolute right-0 top-0 bg-dark-100/90'>
+                    <div className='flex md:hidden mt-19 flex-col space-y-10 h-screen p-5 w-full absolute right-0 top-0 bg-dark-100/90'>
 
                         <a onClick={() => setShowmenu(!showmenu)} href="#home" className='relative hover:border-b-4 border-purple-500 transition-all duration-100 group'>
                             <span className='acti'>Home</span>
