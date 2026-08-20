@@ -1,4 +1,4 @@
-import { FaLightbulb, FaPaintBrush, FaCode, FaReact, FaServer, FaMobileAlt, FaTools, FaNodeJs, FaStripe, FaVuejs, FaFire, FaDatabase, FaCloud, FaRobot, } from 'react-icons/fa';
+import { FaLightbulb,FaPalette ,FaMicrosoft,FaPaintBrush, FaCode, FaReact, FaServer, FaMobileAlt, FaTools, FaNodeJs, FaStripe, FaVuejs, FaFire, FaDatabase, FaCloud, FaRobot, } from 'react-icons/fa';
 import { GiBookshelf } from "react-icons/gi";
 
 import profileImg from '../assets/profile.JPG';
@@ -60,44 +60,47 @@ export const aboutInfo = [
 
 
 
-export const skills = [
+ export const skills = [
   {
     title: 'Frontend Development',
     icon: FaReact,
     description: 'Building responsive and interactive user interfaces with modern frameworks.',
-    tags: ['React', 'Vue.js', 'Angular', 'TypeScript']
+    tags: ['React', 'Bootstrap', 'Framer Motion', 'JavaScript', 'CSS', 'HTML']
   },
   {
     title: 'Backend Development',
     icon: FaServer,
-    description: 'Creating robust server-side applications and RESTful APIs.',
-    tags: ['Node.js', 'Express', 'Django', 'Laravel']
+    description: 'Developing complete MERN applications with server-side logic and APIs.',
+    tags: ['Node.js', 'Express', 'MongoDB']
   },
   {
     title: 'Database Management',
     icon: FaDatabase,
-    description: 'Designing and optimizing databases for performance and scalability.',
-    tags: ['MongoDB', 'PostgreSQL', 'MySQL', 'Firebase']
+    description: 'Designing and managing scalable databases for modern applications.',
+    tags: ['MongoDB', 'Firebase']
   },
   {
-    title: 'Mobile Development',
-    icon: FaMobileAlt,
-    description: 'Building cross-platform mobile applications with modern tools.',
-    tags: ['React Native', 'Flutter', 'Ionic', 'Swift']
+    title: 'UI/UX & Design',
+    icon: FaPalette,
+    description: 'Crafting user-friendly designs and creative visuals.',
+    tags: ['Figma', 'Canva']
   },
   {
-    title: 'Cloud & DevOps',
-    icon: FaCloud,
-    description: 'Deploying and managing applications in cloud environments.',
-    tags: ['AWS', 'Docker', 'Kubernetes', 'CI/CD']
-  },
-  {
-    title: 'Tools & Technologies',
+    title: 'Tools & Workflow',
     icon: FaTools,
-    description: 'Essential tools and technologies I use in my development workflow.',
-    tags: ['Git & GitHub', 'Webpack', 'Figma', 'Jest']
-  }
+    description: 'Using essential tools for version control, testing, and productivity.',
+    tags: ['Git & GitHub', 'Postman', 'Jira']
+  },
+  {
+    title: 'Microsoft Office',
+    icon:  FaMicrosoft,
+    description:  'Skilled in Word, Excel, and PowerPoint for productivity and documentation.',
+    tags: ['MSworld', 'MSExcel', 'MsPowerpoint']
+  },
+ 
+
 ];
+
 
 
 

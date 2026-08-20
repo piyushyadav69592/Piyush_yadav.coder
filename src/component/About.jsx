@@ -24,7 +24,6 @@ const about = () => {
                 </p>
             </motion.div>
 
-            <hr className='text-white m-1' />
 
             {/* profile image and description */}
 
