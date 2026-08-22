@@ -31,7 +31,7 @@ const Skill = () => {
                         // scroll animation 
                         initial={{ opacity: 0, x: 20, scale: 0.9 }}
                         whileInView={{ opacity: 1, x: 0, scale: 1 }}
-                        transition={{ duration: 1, }}
+                        // transition={{ duration: 1, }}
                         viewport={{ once: false, amount: 0.5 }}
                         className='w-full max-w-[360px] text-white m-2 p-4 bg-white/10 rounded-lg shadow-lg'>
                         <div className='flex  gap-4 mb-2 items-center'>

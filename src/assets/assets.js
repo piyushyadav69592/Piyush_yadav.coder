@@ -1,13 +1,14 @@
-import { FaLightbulb,FaPalette ,FaMicrosoft,FaPaintBrush, FaCode, FaReact, FaServer, FaMobileAlt, FaTools, FaNodeJs, FaStripe, FaVuejs, FaFire, FaDatabase, FaCloud, FaRobot, } from 'react-icons/fa';
+import { FaLightbulb, FaPalette, FaMicrosoft, FaPaintBrush, FaCode, FaReact, FaServer, FaHtml5, FaTools, FaCss3Alt, FaJs, FaBootstrap, FaNodeJs, FaDatabase } from 'react-icons/fa';
+import { SiTailwindcss, SiFramer } from 'react-icons/si';
 import { GiBookshelf } from "react-icons/gi";
 
 import profileImg from '../assets/profile.JPG';
-import projectImg1 from '../assets/project1.avif';
-import projectImg2 from '../assets/project2.avif';
-import projectImg3 from '../assets/project3.avif';
+import projectImg1 from '../assets/project1.jpg';
+import projectImg2 from '../assets/project2.jpg';
+import projectImg3 from '../assets/project3.jpg';
 import projectImg4 from '../assets/project4.avif';
-import projectImg5 from '../assets/project5.avif';
-import projectImg6 from '../assets/project6.avif';
+import projectImg5 from '../assets/project5.jpg';
+import projectImg6 from '../assets/project6.jpg';
 import projectImg7 from '../assets/project7.jpg';
 import projectImg8 from '../assets/project8.webp';
 import projectImg9 from '../assets/project9.jpg';
@@ -52,7 +53,6 @@ export const aboutInfo = [
     icon:GiBookshelf,
     title: 'UI/UX with Figma',
     description: 'I design modern, user-friendly interfaces in Figma, focusing on clean layouts and smooth user experiences.',
-    // color: 'text-teal-500'
     color: 'text-green-500'
   }
   ,
@@ -106,56 +106,56 @@ export const aboutInfo = [
 
 export const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-featured online store with shopping cart, user authentication, and payment processing.",
+    title: "Calculator",
+    description: "A simple and intuitive calculator application built with React, allowing users to perform basic arithmetic operations.",
     image: projectImg1,
-    tech: ["React", "Node.js", "MongoDB", "Stripe"],
-    icons: [FaReact, FaNodeJs, FaDatabase, FaStripe],
+    tech: ["React", "Bootstrap", "CSS", "JavaScript"],
+    icons: [FaReact, FaBootstrap, FaCss3Alt, FaJs],
     demo: "#",
     code: "#",
   },
   {
-    title: "Task Management App",
-    description: "A productivity application with drag-and-drop functionality and real-time updates.",
+    title: "Rock-Paper-Scissors Game",
+    description: "A fun and interactive game where players can challenge the computer in a classic rock-paper-scissors match.",
     image: projectImg2,
-    tech: ["Vue.js", "Firebase", "Tailwind CSS", "WebSockets"],
-    icons: [FaVuejs, FaFire, FaCloud, FaDatabase],
+    tech: ["JavaScript", "CSS", "HTML"],
+    icons: [FaJs, FaCss3Alt, FaHtml5],
     demo: "#",
     code: "#",
   },
   {
-    title: "Fitness Tracker",
-    description: "A mobile app for tracking workouts, nutrition, and health metrics.",
+    title: "Pdf Merger",
+    description: "A simple and intuitive PDF merger application built with React, allowing users to combine multiple PDF files into one.",
     image: projectImg3,
-    tech: ["React Native", "GraphQL", "MySQL", "Chart.js"],
-    icons: [FaReact, FaDatabase],
+    tech: ["JavaScript", "CSS", "HTML", "Node.js", "Express.js"],
+    icons: [FaJs, FaCss3Alt, FaHtml5, FaNodeJs],
     demo: "#",
     code: "#",
   },
   {
     title: "Portfolio Website",
-    description: "A personal portfolio to showcase projects, skills, and blogs with dark/light mode support.",
+    description: "A personal portfolio website to showcase projects, skills, and blogs with dark/light mode support.",
     image: projectImg4,
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion", "Markdown"],
-    icons: [FaReact, FaCloud],
+    tech: ["Tailwind CSS", "Framer Motion", "React"],
+    icons: [SiTailwindcss, SiFramer, FaReact],
     demo: "#",
-    code: "#",
+    code: "#"
   },
   {
-    title: "Chat App",
-    description: "A real-time chat application with group messaging, emojis, and file sharing.",
+    title: "Amazon Clone",
+    description: "A creative design e-commerce platform inspired by Amazon's design and functionality.",
     image: projectImg5,
-    tech: ["Socket.IO", "React", "Node.js", "MongoDB"],
-    icons: [FaReact, FaNodeJs, FaDatabase],
+    tech: ["JavaScript", "CSS", "HTML"],
+    icons: [FaJs, FaCss3Alt, FaHtml5],
     demo: "#",
     code: "#",
   },
   {
-    title: "AI Image Generator",
-    description: "Generate images using AI prompts powered by OpenAI's DALL·E model and Cloudinary.",
+    title: "Login Page",
+    description:  " A responsive login page with form validation and user authentication features.",
     image: projectImg6,
-    tech: ["React", "OpenAI API", "Cloudinary", "Tailwind CSS"],
-    icons: [FaRobot, FaReact, FaCloud],
+    tech: ["JavaScript", "HTML", "CSS", "API", "Google Sheets"],
+    icons: [FaJs, FaHtml5, FaCss3Alt],
     demo: "#",
     code: "#",
   }

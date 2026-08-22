@@ -45,7 +45,7 @@ const Navbar = () => {
                 </a>
 
                 <a href="#" className=' relative hover:border-b-2 border-purple-500 transition-all duration-300 group'>
-                    <span className='hover:text-purple-500'>Contect</span>
+                    <span className='hover:text-purple-500'>Contact</span>
                     <span className='absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full'></span>
                 </a>
 
@@ -85,7 +85,7 @@ const Navbar = () => {
                         </a>
 
                         <a onClick={() => setShowmenu(!showmenu)} href="#" className=' relative hover:border-b-4 border-purple-500 transition-all duration-300 group'>
-                            <span className='hover:text-purple-500'>Contect</span>
+                            <span className='hover:text-purple-500'>Contact</span>
 
                         </a>
 
