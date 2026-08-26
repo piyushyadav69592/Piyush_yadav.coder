@@ -6,6 +6,7 @@ import Navbar from './component/Navbar'
 import About from './component/About'
 import Skill from './component/Skill'
 import Project from './component/Project'
+import Experience from './component/Experience'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <About/>
       <Skill/>
       <Project/>
+      <Experience/>
 
       {/* <Routes>
         <Route path='/' element={<Home/>} />

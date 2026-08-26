@@ -28,6 +28,24 @@ export const assets = {
   projectImg9,
   projectImg10
 }
+// crausel
+import img1 from '../assets/img1.jpg';
+import img2 from '../assets/img2.jpg';
+import img3 from '../assets/img3.jpg';
+import img4 from '../assets/img4.jpg';
+import img5 from '../assets/img5.jpg';
+import img6 from '../assets/img6.jpg';
+import img7 from '../assets/img7.webp';
+
+export const crausel = [
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+];
 
 
 export const aboutInfo = [
@@ -162,29 +180,29 @@ export const projects = [
 ];
 
 
-export const workData = [
-  {
-    role: "Senior Frontend Developer",
-    company: "TechCorp Inc.",
-    duration: "2020 - Present",
-    description:
-      "Leading frontend development for enterprise clients, implementing modern frameworks, and mentoring junior developers.",
-    color: "purple"
-  },
-  {
-    role: "Web Developer",
-    company: "Digital Solutions LLC",
-    duration: "2018 - 2020",
-    description:
-      "Developed and maintained web applications for various clients, focusing on responsive design and performance optimization.",
-    color: "pink"
-  },
-  {
-    role: "Junior Developer",
-    company: "StartUp Ventures",
-    duration: "2016 - 2018",
-    description:
-      "Started my career building basic websites and gradually took on more complex projects as I expanded my skill set.",
-    color: "blue"
-  }
-];
+// export const workData = [
+//   {
+//     role: "Senior Frontend Developer",
+//     company: "TechCorp Inc.",
+//     duration: "2020 - Present",
+//     description:
+//       "Leading frontend development for enterprise clients, implementing modern frameworks, and mentoring junior developers.",
+//     color: "purple"
+//   },
+//   {
+//     role: "Web Developer",
+//     company: "Digital Solutions LLC",
+//     duration: "2018 - 2020",
+//     description:
+//       "Developed and maintained web applications for various clients, focusing on responsive design and performance optimization.",
+//     color: "pink"
+//   },
+//   {
+//     role: "Junior Developer",
+//     company: "StartUp Ventures",
+//     duration: "2016 - 2018",
+//     description:
+//       "Started my career building basic websites and gradually took on more complex projects as I expanded my skill set.",
+//     color: "blue"
+//   }
+// ];
