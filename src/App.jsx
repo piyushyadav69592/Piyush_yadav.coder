@@ -7,6 +7,7 @@ import About from './component/About'
 import Skill from './component/Skill'
 import Project from './component/Project'
 import Experience from './component/Experience'
+import Socialmedia from './component/Socialmedia'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Skill/>
       <Project/>
       <Experience/>
+      <Socialmedia/>
 
       {/* <Routes>
         <Route path='/' element={<Home/>} />

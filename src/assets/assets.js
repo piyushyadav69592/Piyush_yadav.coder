@@ -68,7 +68,7 @@ export const aboutInfo = [
     color: 'text-blue'
   },
   {
-    icon:GiBookshelf,
+    icon: GiBookshelf,
     title: 'UI/UX with Figma',
     description: 'I design modern, user-friendly interfaces in Figma, focusing on clean layouts and smooth user experiences.',
     color: 'text-green-500'
@@ -78,7 +78,7 @@ export const aboutInfo = [
 
 
 
- export const skills = [
+export const skills = [
   {
     title: 'Frontend Development',
     icon: FaReact,
@@ -111,11 +111,11 @@ export const aboutInfo = [
   },
   {
     title: 'Microsoft Office',
-    icon:  FaMicrosoft,
-    description:  'Skilled in Word, Excel, and PowerPoint for productivity and documentation.',
+    icon: FaMicrosoft,
+    description: 'Skilled in Word, Excel, and PowerPoint for productivity and documentation.',
     tags: ['MSworld', 'MSExcel', 'MsPowerpoint']
   },
- 
+
 
 ];
 
@@ -170,7 +170,7 @@ export const projects = [
   },
   {
     title: "Login Page",
-    description:  " A responsive login page with form validation and user authentication features.",
+    description: " A responsive login page with form validation and user authentication features.",
     image: projectImg6,
     tech: ["JavaScript", "HTML", "CSS", "API", "Google Sheets"],
     icons: [FaJs, FaHtml5, FaCss3Alt],
@@ -179,30 +179,52 @@ export const projects = [
   }
 ];
 
+// social media links (card)
 
-// export const workData = [
-//   {
-//     role: "Senior Frontend Developer",
-//     company: "TechCorp Inc.",
-//     duration: "2020 - Present",
-//     description:
-//       "Leading frontend development for enterprise clients, implementing modern frameworks, and mentoring junior developers.",
-//     color: "purple"
-//   },
-//   {
-//     role: "Web Developer",
-//     company: "Digital Solutions LLC",
-//     duration: "2018 - 2020",
-//     description:
-//       "Developed and maintained web applications for various clients, focusing on responsive design and performance optimization.",
-//     color: "pink"
-//   },
-//   {
-//     role: "Junior Developer",
-//     company: "StartUp Ventures",
-//     duration: "2016 - 2018",
-//     description:
-//       "Started my career building basic websites and gradually took on more complex projects as I expanded my skill set.",
-//     color: "blue"
-//   }
-// ];
+import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
+import { SiBehance } from 'react-icons/si'
+
+export const socialLinks = [
+  {
+    name: 'Instagram',
+    handle: '@piyush_yadav.coder',
+    href: 'https://www.instagram.com/piyush_yadav.coder/',
+    icon: FaInstagram,
+    color: 'from-pink-500 via-red-500 to-yellow-400',
+    iconColor: 'text-pink-500',
+  },
+  {
+    name: 'Facebook',
+    handle: 'Piyush yadav',
+    href: ' https://www.facebook.com/profile.php?id=100081470195467',
+    icon: FaFacebookF,
+    color: 'from-blue-600 to-blue-400',
+    iconColor: 'text-blue-500',
+  },
+  {
+    name: 'LinkedIn',
+    handle: 'in/piyushyadav69592',
+    href: 'https://www.linkedin.com/in/piyushyadav69592/',
+    icon: FaLinkedinIn,
+    color: 'from-sky-700 to-sky-400',
+    iconColor: 'text-sky-500',
+  },
+  {
+    name: 'Behance',
+    handle: 'Piyush Yadav',
+    href: 'https://behance.net/piyushyadav69592',
+    icon: SiBehance,
+    color: 'from-blue-700 to-cyan-400',
+    iconColor: 'text-cyan-400',
+  },
+  {
+    name: 'GitHub',
+    handle: 'piyushyadav69592',
+    href: 'https://github.com/piyushyadav69592/',
+    icon: FaGithub,
+    color: 'from-slate-700 to-slate-500',
+    iconColor: 'text-gray-200',
+  },
+]
+
+
