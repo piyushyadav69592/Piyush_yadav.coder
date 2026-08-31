@@ -8,6 +8,7 @@ import Skill from './component/Skill'
 import Project from './component/Project'
 import Experience from './component/Experience'
 import Socialmedia from './component/Socialmedia'
+import Contact from './component/Contact'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Project/>
       <Experience/>
       <Socialmedia/>
+      <Contact/>
 
       {/* <Routes>
         <Route path='/' element={<Home/>} />
