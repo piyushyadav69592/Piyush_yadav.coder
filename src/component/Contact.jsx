@@ -21,7 +21,13 @@ const Contact = () => {
 
             {/* contact form */}
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4 p-5 '>
-                <div className='pl-6'>
+                <motion.div
+                    initial={{ opacity: 0, x: -35 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    whileHover={{ y: -8, scale: 1.02 }}
+                    transition={{ duration: 0.45, delay: 0.08, ease: 'easeOut' }}
+                    viewport={{ once: false, amount: 0.5 }}
+                    className='pl-6'>
                     <form action="" className='space-y-5'>
                         <div>
                             <label htmlFor='name' className='text-white  block text-xl pl-2 font-semibold'>Your Name</label>
@@ -37,11 +43,17 @@ const Contact = () => {
                         </div>
                         <button type='button' className='bg-purple-500  rounded-xl text-xl text-white font-bold p-3 w-2/2 hover:bg-purple-600 active:scale-95'>Send Message</button>
                     </form>
-                </div>
+                </motion.div>
 
                 {/* contact information */}
 
-                <div className='space-y-10 mt-8 pl-6'>
+                <motion.div
+                    initial={{ opacity: 0, x: 35 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    whileHover={{ y: -8, scale: 1.02 }}
+                    transition={{ duration: 0.45, delay: 0.08, ease: 'easeOut' }}
+                    viewport={{ once: false, amount: 0.5 }}
+                    className='space-y-10 mt-8 pl-6'>
                     <div>
                         <div className='flex gap-3'>
                             <FaLocationDot className='text-white' size='30' />
@@ -76,7 +88,7 @@ const Contact = () => {
                             Open Resume
                         </a>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     )
