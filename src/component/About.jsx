@@ -34,8 +34,14 @@ const about = () => {
                 <div className='h-[60vh]  w-full lg:w-1/2 pb-5 flex justify-center items-center'>
                     <motion.div initial={{ opacity: 0, x: -40 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration:0.9 }}
-                        viewport={{ once: false, amount:0.2 }} className='h-80 w-64 overflow-hidden shadow-[15px_5px_30px_10px_rgba(147,51,234,0.5)] rounded-full md:h-100 sm:h-90 sm:w-80 lg:h-[30rem] lg:w-[25rem]'>
+                        viewport={{ once: false, amount:0.2 }}
+                        transition={{ duration: 0.9 }}
+                        className='relative h-80 w-64 rounded-full md:h-100 sm:h-90 sm:w-80 lg:h-[30rem] lg:w-[25rem]'>
+                        <motion.div
+                            animate={{ rotate: 360 }}
+                            transition={{ duration: 5, ease: 'linear', repeat: Infinity }}
+                            className='absolute inset-0 rounded-full shadow-[15px_5px_30px_10px_rgba(147,51,234,0.5)]'
+                        />
                         <img src={assets.projectImg10} alt="Profile Image" className='rounded-full h-full w-full object-cover' />
                     </motion.div>
                 </div>

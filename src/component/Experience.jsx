@@ -28,9 +28,9 @@ const Experience = () => {
 
             {/* crausal */}
 
-            <div className='scrollbar-hide w-full h-ful pt-10 pb-5 overflow-hidden'>
+            <div className='scrollbar-hide w-full pt-10 pb-5 overflow-hidden'>
                 <motion.div
-                    className='flex w-max gap-4 p-4'
+                    className='flex min-w-max gap-4 p-4'
                     animate={animationControls}
                     onHoverStart={() => animationControls.stop()}
                     onHoverEnd={startCarousel}

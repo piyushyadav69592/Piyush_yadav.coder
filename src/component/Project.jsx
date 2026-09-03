@@ -9,8 +9,8 @@ const Skill = () => {
 
             <motion.div initial={{ opacity: 0, x: 20, scale: 0.9 }}
                 whileInView={{ opacity: 1, x: 0, scale: 1 }}
-                transition={{ duration: 1, }}
-                viewport={{ once: false, amount: 0.5 }} className=' w-full text-white bg-dark-100/90'>
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true, amount: 0.3 }} className=' w-full text-white bg-dark-100/90'>
                 <h2 className='text-4xl text-center font-bold pt-6 p-3'>My <span className='text-purple-500'>Project</span></h2>
                 <p className='text-lg pl-6 text-center  pr-6 pb-6 md:pl-10  sm:pl:18'>Self taught MERN Stack Developer with proven hands on experience, building projects from interactive games to practical tools like PDF Merger, Calculator, CRUD apps, and Analog Clock — showcasing creativity, problem solving, and job ready skills
                 </p>
@@ -28,12 +28,13 @@ const Skill = () => {
                         }}
                         initial={{ opacity: 0, x: 20, scale: 0.9 }}
                         whileInView={{ opacity: 1, x: 0, scale: 1 }}
-                        transition={{ duration: 0.5 }}
-                        viewport={{ once: false, amount: 0.5 }}
+                        transition={{ duration: 0.45 }}
+                        viewport={{ once: true, amount: 0.25 }}
                         className='flex h-full flex-col overflow-hidden text-white rounded-xl border border-white/10 bg-white/10 shadow-lg'>
                         <img
                             src={project.image}
                             alt={project.title}
+                            loading='lazy'
                             className='h-48 w-full object-cover'
                         />
                         <div className='flex flex-1 flex-col p-5'>

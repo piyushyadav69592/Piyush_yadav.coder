@@ -9,6 +9,7 @@ import Project from './component/Project'
 import Experience from './component/Experience'
 import Socialmedia from './component/Socialmedia'
 import Contact from './component/Contact'
+import Footer from './component/Footer'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <Experience/>
       <Socialmedia/>
       <Contact/>
+      <Footer/>
 
       {/* <Routes>
         <Route path='/' element={<Home/>} />

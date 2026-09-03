@@ -39,7 +39,22 @@ const Hero = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.9, ease: 'easeOut' }}
                     viewport={{ once: false }} className='w-full mt-[-4rem] max-w-[17rem] rounded-tl-[10vw] sm:max-w-[22rem] lg:max-w-[23rem]'>
-                    <img src={assets.profileImg} alt="profile img" className='w-full h-auto rounded-[10vw] object-cover shadow-[15px_5px_30px_10px_rgba(147,51,234,0.5)] shadow-purple-500/80 ' />
+                    <motion.img
+                        src={assets.profileImg}
+                        alt='profile img'
+                        initial={{ filter: 'drop-shadow(0 -15px 30px rgba(147,51,234,0.75))' }}
+                        animate={{
+                            filter: [
+                                'drop-shadow(0 -15px 30px rgba(147,51,234,0.75))',
+                                'drop-shadow(15px 0 30px rgba(147,51,234,0.75))',
+                                'drop-shadow(0 15px 30px rgba(147,51,234,0.75))',
+                                'drop-shadow(-15px 0 30px rgba(147,51,234,0.75))',
+                                'drop-shadow(0 -15px 30px rgba(147,51,234,0.75))',
+                            ],
+                        }}
+                        transition={{ duration: 4, ease: 'linear', repeat: Infinity, repeatType: 'loop' }}
+                        className='w-full h-auto rounded-[10vw] object-cover'
+                    />
                 </motion.div>
             </div>
         </motion.div>
