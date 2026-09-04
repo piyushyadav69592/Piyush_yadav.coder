@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { FaBars } from 'react-icons/fa'
 import { MdClose } from "react-icons/md";
 import { useState } from 'react'
@@ -24,30 +25,30 @@ const Navbar = () => {
 
             <div className='hidden md:flex text-xl space-x-8'>
 
-                <a href="#home" className='relative hover:border-b-2 border-purple-500 transition-all duration-100 group'>
+                <Link to="/home" className='relative hover:border-b-2 border-purple-500 transition-all duration-100 group'>
                     <span className='hover:text-purple-500'>Home</span>
                     <span className='absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full'></span>
-                </a>
+                </Link>
 
-                <a href="#about" className='relative hover:border-b-2 border-purple-500 transition-all duration-100 group'>
+                <Link to="/about" className='relative hover:border-b-2 border-purple-500 transition-all duration-100 group'>
                     <span className='hover:text-purple-500'>About</span>
                     <span className='absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full'></span>
-                </a>
+                </Link>
 
-                <a href="#skills" className=' relative hover:border-b-2 border-purple-500 transition-all duration-300 group'>
+                <Link to="/skills" className=' relative hover:border-b-2 border-purple-500 transition-all duration-300 group'>
                     <span className='hover:text-purple-500'>Skills</span>
                     <span className='absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full'></span>
-                </a>
+                </Link>
 
-                <a href="#project" className=' relative hover:border-b-2 border-purple-500 transition-all duration-300 group'>
+                <Link to="/project" className=' relative hover:border-b-2 border-purple-500 transition-all duration-300 group'>
                     <span className='hover:text-purple-500'>Project</span>
                     <span className='absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full'></span>
-                </a>
+                </Link>
 
-                <a href="#" className=' relative hover:border-b-2 border-purple-500 transition-all duration-300 group'>
+                <Link to="/contact" className=' relative hover:border-b-2 border-purple-500 transition-all duration-300 group'>
                     <span className='hover:text-purple-500'>Contact</span>
                     <span className='absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full'></span>
-                </a>
+                </Link>
 
             </div>
 
@@ -64,30 +65,30 @@ const Navbar = () => {
                 showmenu && (
                     <div className='flex md:hidden mt-19 flex-col space-y-10 h-screen p-5 w-full absolute right-0 top-0 bg-dark-100/90'>
 
-                        <a onClick={() => setShowmenu(!showmenu)} href="#home" className='relative hover:border-b-4 border-purple-500 transition-all duration-100 group'>
+                        <Link onClick={() => setShowmenu(!showmenu)} to="/home" className='relative hover:border-b-4 border-purple-500 transition-all duration-100 group'>
                             <span className='acti'>Home</span>
 
-                        </a>
+                        </Link>
 
-                        <a onClick={() => setShowmenu(!showmenu)} href="#about" className='relative hover:border-b-4 border-purple-500 transition-all duration-100 group'>
+                        <Link onClick={() => setShowmenu(!showmenu)} to="/about" className='relative hover:border-b-4 border-purple-500 transition-all duration-100 group'>
                             <span className='hover:text-purple-500'>About</span>
 
-                        </a>
+                        </Link>
 
-                        <a onClick={() => setShowmenu(!showmenu)} href="#skills" className=' relative hover:border-b-4 border-purple-500 transition-all duration-300 group'>
+                        <Link onClick={() => setShowmenu(!showmenu)} to="/skills" className=' relative hover:border-b-4 border-purple-500 transition-all duration-300 group'>
                             <span className='hover:text-purple-500'>Skills</span>
 
-                        </a>
+                        </Link>
 
-                        <a onClick={() => setShowmenu(!showmenu)} href="#project" className=' relative hover:border-b-4 border-purple-500 transition-all duration-300 group'>
+                        <Link onClick={() => setShowmenu(!showmenu)} to="/project" className=' relative hover:border-b-4 border-purple-500 transition-all duration-300 group'>
                             <span className='hover:text-purple-500'>Project</span>
 
-                        </a>
+                        </Link>
 
-                        <a onClick={() => setShowmenu(!showmenu)} href="#" className=' relative hover:border-b-4 border-purple-500 transition-all duration-300 group'>
+                        <Link onClick={() => setShowmenu(!showmenu)} to="/contact" className=' relative hover:border-b-4 border-purple-500 transition-all duration-300 group'>
                             <span className='hover:text-purple-500'>Contact</span>
 
-                        </a>
+                        </Link>
 
                     </div>
                 )

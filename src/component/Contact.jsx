@@ -28,20 +28,20 @@ const Contact = () => {
                     transition={{ duration: 0.45, delay: 0.08, ease: 'easeOut' }}
                     viewport={{ once: false, amount: 0.5 }}
                     className='pl-6'>
-                    <form action="" className='space-y-5'>
+                    <form action='https://formsubmit.co/piyushyadav969549@gmail.com' method='POST' className='space-y-5'>
                         <div>
                             <label htmlFor='name' className='text-white  block text-xl pl-2 font-semibold'>Your Name</label>
-                            <input type='text' id='name' className='bg-dark-200  rounded-xl text-white placeholder:text-gray-500 border border-gray-600 p-3 w-2/2' placeholder='Enter Your Name' />
+                            <input type='text' name='name' id='name' required className='bg-dark-200  rounded-xl text-white placeholder:text-gray-500 border border-gray-600 p-3 w-full' placeholder='Enter Your Name' />
                         </div>
                         <div>
                             <label htmlFor='email' className='text-white block text-xl pl-2 font-semibold'>Your Email Address</label>
-                            <input type='email' id='email' className='bg-dark-200  rounded-xl text-white placeholder:text-gray-500 border border-gray-600 p-3 w-2/2' placeholder='Enter Your Email  Address' />
+                            <input type='email' name='email' id='email' required className='bg-dark-200  rounded-xl text-white placeholder:text-gray-500 border border-gray-600 p-3 w-full' placeholder='Enter Your Email Address' />
                         </div>
                         <div>
-                            <label htmlFor='name' className='text-white block text-xl pl-2 font-semibold'>Your Message</label>
-                            <input type='text' id='name' className='bg-dark-200  rounded-xl text-white placeholder:text-gray-500 border border-gray-600 p-3 h-[6rem] w-2/2' placeholder='EnterYour Message' />
+                            <label htmlFor='message' className='text-white block text-xl pl-2 font-semibold'>Your Message</label>
+                            <textarea name='message' id='message' required className='bg-dark-200 rounded-xl text-white placeholder:text-gray-500 border border-gray-600 p-3 h-[6rem] w-full' placeholder='Enter Your Message' />
                         </div>
-                        <button type='button' className='bg-purple-500  rounded-xl text-xl text-white font-bold p-3 w-2/2 hover:bg-purple-600 active:scale-95'>Send Message</button>
+                        <button type='submit' className='bg-purple-500  rounded-xl text-xl text-white font-bold p-3 w-2/2 hover:bg-purple-600 active:scale-95'>Send Message</button>
                     </form>
                 </motion.div>
 
