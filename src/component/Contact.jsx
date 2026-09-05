@@ -1,10 +1,49 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { FaLocationDot, FaPhoneFlip } from "react-icons/fa6";
 import { HiOutlineMail } from "react-icons/hi";
 import resumePdf from '../assets/resume.pdf';
 
 const Contact = () => {
+    const [showSuccess, setShowSuccess] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        if (isSubmitting) return;
+
+        const form = e.target;
+        setIsSubmitting(true);
+
+        try {
+            const response = await fetch('https://formsubmit.co/ajax/piyushyadav969549@gmail.com', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: form.name.value,
+                    email: form.email.value,
+                    message: form.message.value,
+                    _captcha: 'false',
+                    _template: 'table',
+                    _subject: 'New Portfolio Contact Message'
+                })
+            });
+
+            if (response.ok) {
+                form.reset();
+                setShowSuccess(true);
+            }
+        } catch (error) {
+            console.error('Error sending message:', error);
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
     return (
         <div className='bg-dark-100/90'>
 
@@ -28,7 +67,7 @@ const Contact = () => {
                     transition={{ duration: 0.45, delay: 0.08, ease: 'easeOut' }}
                     viewport={{ once: false, amount: 0.5 }}
                     className='pl-6'>
-                    <form action='https://formsubmit.co/piyushyadav969549@gmail.com' method='POST' className='space-y-5'>
+                    <form onSubmit={handleSubmit} className='space-y-5'>
                         <div>
                             <label htmlFor='name' className='text-white  block text-xl pl-2 font-semibold'>Your Name</label>
                             <input type='text' name='name' id='name' required className='bg-dark-200  rounded-xl text-white placeholder:text-gray-500 border border-gray-600 p-3 w-full' placeholder='Enter Your Name' />
@@ -41,8 +80,30 @@ const Contact = () => {
                             <label htmlFor='message' className='text-white block text-xl pl-2 font-semibold'>Your Message</label>
                             <textarea name='message' id='message' required className='bg-dark-200 rounded-xl text-white placeholder:text-gray-500 border border-gray-600 p-3 h-[6rem] w-full' placeholder='Enter Your Message' />
                         </div>
-                        <button type='submit' className='bg-purple-500  rounded-xl text-xl text-white font-bold p-3 w-2/2 hover:bg-purple-600 active:scale-95'>Send Message</button>
+                        <button
+                            type='submit'
+                            disabled={isSubmitting}
+                            className={`rounded-xl text-xl text-white font-bold p-3 w-2/2 active:scale-95 ${isSubmitting ? 'bg-gray-500 cursor-not-allowed' : 'bg-purple-500 hover:bg-purple-600'}`}
+                        >
+                            {isSubmitting ? 'Sending...' : 'Send Message'}
+                        </button>
                     </form>
+
+                    {showSuccess && (
+                        <div className='fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm'>
+                            <div className='bg-white rounded-2xl shadow-2xl p-6 max-w-sm w-[90%] text-center'>
+                                <div className='mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-green-100 text-2xl'>✅</div>
+                                <h3 className='text-2xl font-bold text-gray-900'>Message Sent</h3>
+                                <p className='mt-2 text-gray-600'>Your message has been sent successfully.</p>
+                                <button
+                                    onClick={() => setShowSuccess(false)}
+                                    className='mt-5 rounded-xl bg-green-500 px-5 py-2 text-white font-semibold hover:bg-green-600'
+                                >
+                                    OK
+                                </button>
+                            </div>
+                        </div>
+                    )}
                 </motion.div>
 
                 {/* contact information */}

@@ -7,7 +7,7 @@ import projectImg1 from '../assets/project1.jpg';
 import projectImg2 from '../assets/project2.jpg';
 import projectImg3 from '../assets/project3.jpg';
 import projectImg4 from '../assets/project4.avif';
-import projectImg5 from '../assets/project5.jpg';
+import projectImg5 from '../assets/project5.png';
 import projectImg6 from '../assets/project6.jpg';
 import projectImg7 from '../assets/project7.jpg';
 import projectImg8 from '../assets/project8.webp';
@@ -160,8 +160,8 @@ export const projects = [
     code: "#"
   },
   {
-    title: "Amazon Clone",
-    description: "A creative design e-commerce platform inspired by Amazon's design and functionality.",
+    title: "Employee Management System",
+    description: "A web application for managing employee records, including adding, updating, and deleting employee information.",
     image: projectImg5,
     tech: ["JavaScript", "CSS", "HTML"],
     icons: [FaJs, FaCss3Alt, FaHtml5],
