@@ -129,8 +129,8 @@ export const projects = [
     image: projectImg1,
     tech: ["React", "Bootstrap", "CSS", "JavaScript"],
     icons: [FaReact, FaBootstrap, FaCss3Alt, FaJs],
-    demo: "#",
-    code: "#",
+    demo: "https://calculatorbypiyush.netlify.app/",
+    code: "https://github.com/piyushyadav69592/calculator",
   },
   {
     title: "Rock-Paper-Scissors Game",
@@ -138,8 +138,8 @@ export const projects = [
     image: projectImg2,
     tech: ["JavaScript", "CSS", "HTML"],
     icons: [FaJs, FaCss3Alt, FaHtml5],
-    demo: "#",
-    code: "#",
+    demo: "https://rpsgamebypiyush.netlify.app/",
+    code: "https://github.com/piyushyadav69592/Rock-Paper-Scissors-Game",
   },
   {
     title: "Pdf Merger",
@@ -147,7 +147,7 @@ export const projects = [
     image: projectImg3,
     tech: ["JavaScript", "CSS", "HTML", "Node.js", "Express.js"],
     icons: [FaJs, FaCss3Alt, FaHtml5, FaNodeJs],
-    demo: "#",
+    demo: "https://piyushpdf.netlify.app/",
     code: "#",
   },
   {
@@ -165,7 +165,7 @@ export const projects = [
     image: projectImg5,
     tech: ["JavaScript", "CSS", "HTML"],
     icons: [FaJs, FaCss3Alt, FaHtml5],
-    demo: "#",
+    demo: "https://curdoperationn.netlify.app/",
     code: "#",
   },
   {
@@ -174,7 +174,7 @@ export const projects = [
     image: projectImg6,
     tech: ["JavaScript", "HTML", "CSS", "API", "Google Sheets"],
     icons: [FaJs, FaHtml5, FaCss3Alt],
-    demo: "#",
+    demo: "https://ingramlogin.netlify.app/",
     code: "#",
   }
 ];

@@ -29,7 +29,7 @@ const Skill = () => {
                         initial={{ opacity: 0, x: 20, scale: 0.9 }}
                         whileInView={{ opacity: 1, x: 0, scale: 1 }}
                         transition={{ duration: 0.45 }}
-                        viewport={{ once: true, amount: 0.25 }}
+                        viewport={{ once: false, amount: 0.5 }}
                         className='flex h-full flex-col overflow-hidden text-white rounded-xl border border-white/10 bg-white/10 shadow-lg'>
                         <img
                             src={project.image}
