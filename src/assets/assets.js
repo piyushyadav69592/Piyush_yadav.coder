@@ -8,7 +8,7 @@ import projectImg2 from '../assets/project2.jpg';
 import projectImg3 from '../assets/project3.jpg';
 import projectImg4 from '../assets/project4.avif';
 import projectImg5 from '../assets/project5.png';
-import projectImg6 from '../assets/project6.jpg';
+import projectImg6 from '../assets/project6.png';
 import projectImg7 from '../assets/project7.jpg';
 import projectImg8 from '../assets/project8.webp';
 import projectImg9 from '../assets/project9.jpg';
@@ -148,7 +148,7 @@ export const projects = [
     tech: ["JavaScript", "CSS", "HTML", "Node.js", "Express.js"],
     icons: [FaJs, FaCss3Alt, FaHtml5, FaNodeJs],
     demo: "https://piyushpdf.netlify.app/",
-    code: "#",
+    code: "https://github.com/piyushyadav69592/PDF_Merge_Tool",
   },
   {
     title: "Portfolio Website",
@@ -166,16 +166,16 @@ export const projects = [
     tech: ["JavaScript", "CSS", "HTML"],
     icons: [FaJs, FaCss3Alt, FaHtml5],
     demo: "https://curdoperationn.netlify.app/",
-    code: "#",
+    code: "https://github.com/piyushyadav69592/Employee-Management-System",
   },
   {
-    title: "Login Page",
-    description: " A responsive login page with form validation and user authentication features.",
+    title: "Social Media",
+    description: " A social media web application that allows users to connect, share posts, and interact with friends and followers.",
     image: projectImg6,
-    tech: ["JavaScript", "HTML", "CSS", "API", "Google Sheets"],
-    icons: [FaJs, FaHtml5, FaCss3Alt],
-    demo: "https://ingramlogin.netlify.app/",
-    code: "#",
+    tech: ["JavaScript", "HTML", "CSS", "React", "API"],
+    icons: [FaJs, FaHtml5, FaCss3Alt,FaReact],
+    demo: "https://socialmedea.netlify.app/",
+    code: "https://github.com/piyushyadav69592/social-media_web",
   }
 ];
 
