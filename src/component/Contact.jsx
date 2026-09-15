@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { FaLocationDot, FaPhoneFlip } from "react-icons/fa6";
 import { HiOutlineMail } from "react-icons/hi";
-import resumePdf from '../assets/resume.pdf';
+import resumePdf from '../assets/Resume.pdf';
 
 const Contact = () => {
     const [showSuccess, setShowSuccess] = useState(false);
