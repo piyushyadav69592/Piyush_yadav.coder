@@ -11,7 +11,6 @@ import projectImg5 from '../assets/project5.png';
 import projectImg6 from '../assets/project6.png';
 import projectImg7 from '../assets/project7.jpg';
 import projectImg8 from '../assets/project8.webp';
-import projectImg9 from '../assets/project9.jpg';
 import projectImg10 from '../assets/project10.jpeg';
 
 
@@ -25,7 +24,6 @@ export const assets = {
   projectImg6,
   projectImg7,
   projectImg8,
-  projectImg9,
   projectImg10
 }
 // crausel
@@ -157,7 +155,7 @@ export const projects = [
     tech: ["Tailwind CSS", "Framer Motion", "React"],
     icons: [SiTailwindcss, SiFramer, FaReact],
     demo: "#",
-    code: "#"
+    code: "https://github.com/piyushyadav69592/Piyush_yadav.coder"
   },
   {
     title: "Employee Management System",
